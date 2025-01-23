@@ -107,7 +107,7 @@ p {
     max-width: 1000px;
     line-height: 2;
     margin: 0 auto;
-    color: white;
+    color: black;
 }
 
 /* modifying courses class so that other tags aren't modified */
