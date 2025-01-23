@@ -1,4 +1,4 @@
-Stephen Stardellis: 
+Stephen Stardellis Webpage: https://a1-sstardellis.glitch.me Code: https://glitch.com/edit/#!/a1-sstardellis
 
 This project shows a sample webpage about myself with basic HTML, CSS, and JavaScript application to creating the page. 
 It contains two pages, one call 'index.html' to introduce myself and another called 'hobby.html' to allow you to show your interests for movies since its one of my hobbies.
