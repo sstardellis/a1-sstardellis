@@ -1,1 +1,191 @@
+nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    background-color: #0167DC;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+
+    width: auto;
+    padding: 0;
+    position: relative;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+
+    /* get rid of underline and adding transition color */
+    text-decoration: none;
+    transition: color 0.5s, background-color 0.5s, border-radius 0.5s;
+    padding: 20px 20px;
+}
+
+nav li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* first and last item hover fix to get rid of boxy borders, must be 15px */
+/* syntax a:first-child/last-child */
+nav li:first-child a:hover {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+nav li:last-child a:hover {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* fix radius so that there isn't a flicker, must match the radius */
+nav li:first-child a {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+nav li:last-child a {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+body {
+    background-color: #6CC1D9;
+    /* Google font */
+    font-family: "Roboto Slab", serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #6C7DD9;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    margin-top: 10px;
+}
+
+table {
+    border: 5px solid #0167DC;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: center;
+    font-size: 20px;
+    overflow: hidden;
+    margin: auto;
+    background-color: #6CD9CD;
+}
+
+th, td {
+    color: white;
+    padding: 15px;
+}
+
+th {
+    background-color: #0167DC;
+}
+
+tr:hover {
+    background-color: #6CC1D9;
+}
+
+
+p {
+    text-align: center;
+    font-size: 20px;
+    max-width: 1000px;
+    line-height: 2;
+    margin: 0 auto;
+    color: white;
+}
+
+/* modifying courses class so that other tags aren't modified */
+
+.courses {
+    padding-left: 40px;
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #6C9FD9;
+    border-style: solid;
+    border-radius: 15px;
+    list-style-type: square;
+}
+
+.courses li {
+    font-size: 15px;
+    margin: 10px;
+}
+
+.courses li:hover {
+    background-color: #7F6CD9;
+    transition: background-color 0.4s;
+}
+
+
+/* styling up form */
+
+textarea {
+    resize: vertical;
+    overflow: auto;
+}
+
+.movieform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    background-color: white;
+    padding: 15px;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+
+/* combining both the table and the list to be centered together on the page */
+
+.mainsection {
+    display: flex;
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    background-color: #6CD9CE;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+    bottom: 0;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 300px;
+}
+
+/* fixes footer being off slightly */
+
+html, body {
+    margin: 0;
+}

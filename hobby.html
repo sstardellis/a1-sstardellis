@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS4241 Assignment 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="https://www.wpi.edu/" target="_blank">WPI</a></li>
+        <li><a href="https://www.imdb.com/" target="_blank">IMDB</a></li>
+    </ul>
+</nav>
+<header>
+
+    <h1>My Hobby: Movies</h1>
+
+    <h2><a href="https://www.imdb.com/chart/top/" target="_blank">Top 250 Movies of All Time</a></h2>
+
+</header>
+
+<main>
+    <section class="movieform">
+        <form>
+
+            <!-- text input -->
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <br>
+
+            <!-- text area -->
+
+            <label for="listofmovies">List your top 5 movies:</label>
+
+            <textarea id="listofmovies" name="listofmovies" rows="17" cols="30"></textarea>
+
+            <br>
+
+
+            <!-- checkbox-->
+
+            <p>Which streaming services do you use?</p>
+
+            <input type="checkbox" id="netflix" name="streamingservice" value="Netflix">
+            <label for="netflix">Netflix</label><br>
+
+            <input type="checkbox" id="hulu" name="streamingservice" value="Hulu">
+            <label for="hulu">Hulu</label><br>
+
+            <input type="checkbox" id="amazon-prime" name="streamingservice" value="Amazon Prime Video">
+            <label for="amazon-prime">Amazon Prime Video</label><br>
+
+            <input type="checkbox" id="disney-plus" name="streamingservice" value="Disney+">
+            <label for="disney-plus">Disney+</label><br>
+
+            <input type="checkbox" id="apple-tv" name="streamingservice" value="Apple TV+">
+            <label for="apple-tv">Apple TV+</label><br><br>
+
+
+            <!-- radio buttons -->
+            <p>How many movies do you watch per week?</p>
+            <input type="radio" id="none" name="movie_frequency" value="None">
+            <label for="none">0</label><br>
+
+            <input type="radio" id="sometimes" name="movie_frequency" value="Sometimes">
+            <label for="sometimes">1-2</label><br>
+
+            <input type="radio" id="alot" name="movie_frequency" value="A Lot">
+            <label for="alot">3-5</label><br>
+
+            <input type="radio" id="everyday" name="movie_frequency" value="Everyday">
+            <label for="everyday">7+</label><br>
+
+            <br>
+
+            <!-- dropdown -->
+
+
+            <label for="genre">Choose your favorite genre:</label>
+
+            <select name="genre" id="genre">
+                <option value="action">Action</option>
+                <option value="horror">Horror</option>
+                <option value="drama">Drama</option>
+                <option value="comedy">Comedy</option>
+                <option value="scifi">Sci-fi</option>
+                <option value="romance">Romance</option>
+                <option value="other">Other</option>
+            </select>
+
+            <br>
+
+            <!-- submit button -->
+
+            <button type="submit">Submit</button>
+
+
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Steve Stardellis © 2025</p>
+    <p>
+        <a href="https://www.wpi.edu/" target="_blank">Contact</a>
+    </p>
+</footer>
+
+<!-- navbar script -->
+<script src="navbar.js"></script>
+
+</body>
+
+
+</html>
